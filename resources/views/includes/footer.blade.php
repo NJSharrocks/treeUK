@@ -1,2 +1,6 @@
-<p class="pull-right">&copy Nathan James Sharrocks</p>
-<a href="/" class="pull-left">Home</a>
+<footer class="footer">
+
+  <p>© Copyright 2019</p>
+  <p>Nathan James Sharrocks</p>
+
+</footer>

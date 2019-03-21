@@ -6,7 +6,7 @@
 
   $I->haveRecord('woodlands', [
       'id' => '9999',
-      'name' => 'Randomtest'
+      'name' => 'Randomtest',
       'longitudeandlatitude' => '999999A999999A',
       'description' => 'Randomtest',
   ]);

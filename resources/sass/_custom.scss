@@ -1,21 +1,24 @@
 body {
   margin: 0;
-  font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Oswald', sans-serif;
+  background-color: white;
 }
 
-a {
-  color: #000;
+.logo {
+  color: #709255;
+  background-color: #172815;
+  padding: 0;
 }
+
 
 /* header */
 
 .header {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background-color: #709255;
   position: fixed;
   width: 100%;
   z-index: 3;
+  
 }
 
 .header ul {
@@ -23,19 +26,21 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
 }
 
 .header li a {
   display: block;
+  height: 100%;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  color: white;
+  background-color: #709255;
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: white;
+  color: #3E5622;
 }
 
 .header .logo {
@@ -66,7 +71,7 @@ a {
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: #172815;
   display: block;
   height: 2px;
   position: relative;
@@ -76,7 +81,7 @@ a {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: #172815;
   content: '';
   display: block;
   height: 100%;
@@ -109,16 +114,41 @@ a {
 
 .header .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
+  background: #3E5622;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
+  background: #3E5622;
 }
 
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+
+.background {
+  width: 100vw;
+}
+
+.banner {
+  min-width: 100%;
+  max-width: 100vw;
+  height: 500px;
+  object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+  background-color: #172815;
+  color: #95B46A;
+}
+
 
 /* 48em = 768px */
 
@@ -129,11 +159,16 @@ a {
   .header li a {
     padding: 20px 30px;
   }
+  .header {
+    width: 100%;
+    position: fixed;
+
+  }
   .header .menu {
     clear: none;
-    float: right;
     max-height: none;
   }
+
   .header .menu-icon {
     display: none;
   }

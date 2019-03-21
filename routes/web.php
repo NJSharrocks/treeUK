@@ -15,6 +15,10 @@ Route::resource('/', 'HomeController');
 
 Route::resource('/about', 'AboutController');
 
+Route::get('/admin/woodlands', function() {
+  return view ('admin.woodlands');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -29,3 +33,7 @@ Route::resource('/about', 'AboutController');
 Route::group(['middleware' => ['web']], function () {
     //
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

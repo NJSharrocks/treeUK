@@ -1,5 +1,11 @@
 @extends('layouts.master')
 @section('title', 'My Home Page')
 @section('content')
-    <p>I AM A LARAVEL BLADE START.</p>
+  <div class="background">
+    <img class="banner" src="{{asset('/img/banner1.jpg')}}" alt="">
+  </div>
+  <div class="foreground">
+    
+  </div>
+
 @endsection
